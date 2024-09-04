@@ -16,18 +16,18 @@ public class Bike {
 	String bikeName;
 	String bikeCompany;
 	int bikeMillage;
-	int bikeCost;
+	int bikePrice;
 
 	public Bike() {
 		super();
 	}
 
-	public Bike(String bikeName, String bikeCompany, int bikeMillage, int bikeCost) {
+	public Bike(String bikeName, String bikeCompany, int bikeMillage, int bikePrice) {
 		super();
 		this.bikeName = bikeName;
 		this.bikeCompany = bikeCompany;
 		this.bikeMillage = bikeMillage;
-		this.bikeCost = bikeCost;
+		this.bikePrice = bikePrice;
 	}
 
 	public int getBikeId() {
@@ -62,18 +62,18 @@ public class Bike {
 		this.bikeMillage = bikeMillage;
 	}
 
-	public int getBikeCost() {
-		return bikeCost;
+	public int getBikePrice() {
+		return bikePrice;
 	}
 
-	public void setBikeCost(int bikeCost) {
-		this.bikeCost = bikeCost;
+	public void setBikePrice(int bikePrice) {
+		this.bikePrice = bikePrice;
 	}
 
 	@Override
 	public String toString() {
 		return "Bike [bikeId=" + bikeId + ", bikeName=" + bikeName + ", bikeCompany=" + bikeCompany + ", bikeMillage="
-				+ bikeMillage + ", bikeCost=" + bikeCost + "]";
+				+ bikeMillage + ", bikePrice=" + bikePrice + "]";
 	}
 
 }
